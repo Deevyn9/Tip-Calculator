@@ -40,3 +40,9 @@ body {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media (max-width; 500px) {
+    .splitter {
+        height: 20vh;
+    }
+}
