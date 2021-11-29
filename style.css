@@ -111,6 +111,7 @@ h3 {
     width: 100%;
     max-width: 100px;
     height: 40px;
+    cursor: pointer;
 }
 
 .grid {
