@@ -16,7 +16,7 @@ peopleNumber.addEventListener("input", (e)=> {
 
 function updateTotal() {
     if(peopleNumber.value > 0) {
-        totalAmount.textContent = `$${billAmount.value/peopleNumber.value}`;
+        totalAmount.textContent = `$${((billAmount.value)/(peopleNumber.value)).toFixed(2)}`;
     } else {
         totalAmount.textContent = "$0.00"
     }
