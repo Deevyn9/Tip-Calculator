@@ -20,25 +20,28 @@
         <h3>Bill</h3>
         <div class="price-input">
           <div class="dollar"></div>
-          <input type="text" name="bill" class="field">
+          <input type="number" name="bill" placeholder="0.00" class="field" min="">
         </div>
       </div>
       <div class="tip-select">
         <h3>Select Tip %</h3>
         <div class="grid">
-          <div class="five">5%</div>
-          <div class="ten">10%</div>
-          <div class="fifteen">15%</div>
-          <div class="twenty-five">25%</div>
-          <div class="fifty">50%</div>
-          <input type="text" name="custom-tip" placeholder="Custom" class="custom">
+          <button class="tip unselected" value="5">5%</button>
+          <button class="tip unselected" value="10">10%</button>
+          <button class="tip unselected" value="15">15%</button>
+          <button class="tip unselected" value="25">25%</button>
+          <button class="tip unselected" value="50">50%</button>
+          <input type="number" name="tip" placeholder="% Custom" class="custom" min="0">
         </div>
       </div>
       <div class="people">
-        <h3>Number of People</h3>
+        <div class="people-row"> 
+          <h3>Number of People</h3>
+          <h3 class="zero">can't be zero</h3>
+        </div>
         <div class="no-of-people">
           <div class="person-svg"></div>
-          <input type="text" name="people-number" class="people-field">
+          <input type="number" name="people-number" placeholder="0" class="people-field" min="0">
         </div>
       </div>
     </div>
@@ -61,31 +64,6 @@
       <div class="reset-btn">Reset</div>
     </div>
   </div>
-
-
-
-  <!-- Bill
-
-  
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  
-
-
-  
-  
-
-   -->
-  
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   <script src="/app.js"></script>
 </body>
 </html>
