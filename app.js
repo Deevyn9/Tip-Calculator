@@ -41,7 +41,7 @@ customPercentage.addEventListener("input", ()=>{
 })
 
 billAmount.addEventListener("input", (e) => {
-    amt = Number(billAmount.value)
+    amt = Number(billAmount.value);
     amount()
 });
 
@@ -68,13 +68,15 @@ function amount() {
 }
 
 resetButton.addEventListener('click', ()=> {
-    billAmount.value = "";
+    amt = "";
+    billAmount.value = ""
     peopleNumber.value = "";
     customPercentage.value = "";
     tipAmount.textContent = "$0.00"
     totalAmount.textContent = "$0.00"
 
-       tipPercentage.forEach(e =>{
+    tipPercentage.forEach(e => {
+        tip = 0;
         e.classList.remove("selected");
         e.classList.add("unselected");
     })
